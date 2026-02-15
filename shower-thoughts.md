@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Why do your best ideas come in the shower?"
 summary: "72% of people report creative ideas in the shower. The science behind shower thoughts involves the default mode network, dopamine, and moderately engaging tasks that let the mind wander productively."
 subtitle: "It's not the water. It's your brain finally getting room to work."

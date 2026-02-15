@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Why does walking help you think?"
 summary: "Walking increases creative output by 60% according to Stanford research. Philosophers from Aristotle to Nietzsche used walking as a thinking tool. The science explains why bilateral rhythmic movement activates the brain's default mode network."
 subtitle: "Aristotle knew. Stanford proved it."

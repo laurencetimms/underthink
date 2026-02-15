@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Walk — an app for thinking on your feet"
 summary: "Walk is a free Android app that supports creative thinking through gentle movement and generative audio. Designed for contemplative walks, it provides ambient soundscapes that fade into the background, encouraging default mode network activation."
 subtitle: "Generative audio for contemplative walks."

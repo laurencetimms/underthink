@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Why fidgeting, stimming, and background tasks help some people think"
 summary: "Fidgeting and stimming are forms of self-regulation that help some brains reach the arousal level where clear thinking becomes possible. Zentall's optimal stimulation theory explains why people with ADHD and other neurodivergent conditions think better with background sensory input."
 subtitle: "Different brains need different conditions."

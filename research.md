@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "The research behind Underthink"
 summary: "A curated bibliography of key research on the default mode network, creative incubation, walking and creativity, mind wandering, ADHD and optimal stimulation, and the neuroscience of diffuse thinking."
 subtitle: "The papers, summarised in plain language."

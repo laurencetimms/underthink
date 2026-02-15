@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Clear — a hand-eye coordination tool for clear thinking"
 summary: "Clear is a free Android app that creates a calibrated hand-eye coordination demand to support clear thinking. Users tap, flick, or tilt to interact with soft blobs of light while their mind works on whatever needs attention."
 subtitle: "Tap, flick, or tilt while your mind works."

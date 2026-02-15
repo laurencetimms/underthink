@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Mindfulness and underthinking are not the same thing"
 summary: "Mindfulness and underthinking are neurologically opposite states. Mindfulness suppresses the default mode network to bring attention to the present moment. Underthinking activates the DMN to enable creative incubation and problem-solving. Both are valuable — for different situations."
 subtitle: "Both are valuable. They do different things."

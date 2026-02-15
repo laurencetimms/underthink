@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "What's the difference between focused and diffuse thinking?"
 summary: "Focused and diffuse thinking are two complementary modes of cognition. Focused mode is analytical and narrow; diffuse mode is associative and wide-ranging. Barbara Oakley's framework explains how switching between them is essential for learning and creative problem-solving."
 subtitle: "Your brain has two modes. You need both."
