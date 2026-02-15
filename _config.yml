@@ -1,7 +1,7 @@
 title: Underthink
 description: "Your best thinking happens when you're not trying. The science of showers, walks, and letting your mind work."
 url: "https://underthink.app"
-baseurl: ""
+baseurl: "/underthink"
 
 # Disable the default theme to allow our custom CSS to take over
 theme: []
