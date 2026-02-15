@@ -12,6 +12,9 @@ kramdown:
 
 permalink: /:slug/
 
+sass:
+  style: compressed
+
 exclude:
   - README.md
   - Gemfile

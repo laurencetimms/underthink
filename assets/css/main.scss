@@ -99,3 +99,29 @@ $muted-grey: #888888;
     }
   }
 }
+
+// Layout Wrappers
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.site-header {
+    padding: 2rem 0;
+    .site-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        color: #d35400; // Your Burnt Orange
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+.site-footer {
+    margin-top: 10rem;
+    padding: 4rem 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.9rem;
+    color: #888;
+}
