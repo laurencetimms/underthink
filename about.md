@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "About Underthink"
 summary: "Underthink is an independent project exploring the science of creative thinking, default mode network activation, and the tools that support productive mind wandering. Built by Laurence Mayhead."
 subtitle: "Who built this, and why."

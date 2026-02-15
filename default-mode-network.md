@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "What is the default mode network?"
 summary: "The default mode network (DMN) is a brain system discovered by Marcus Raichle in 2001 that activates when you stop focusing on external tasks. It handles self-referential thought, memory consolidation, future planning, and creative connection-making."
 subtitle: "The brain system that turns on when you turn off."
