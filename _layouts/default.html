@@ -1,37 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — Underthink{% else %}Underthink{% endif %}</title>
+  <meta name="description" content="{{ page.summary | default: site.description }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-    {% seo %} </head>
+  {% if page.schema == "faq" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "{{ page.question }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ page.answer | strip_html | truncate: 300 }}"
+      }
+    }]
+  }
+  </script>
+  {% endif %}
+
+  {% if page.schema == "article" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.summary }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.author.name }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Underthink",
+      "url": "{{ site.url }}"
+    },
+    "datePublished": "{{ page.date | default: '2026-02-11' }}",
+    "url": "{{ page.url | absolute_url }}"
+  }
+  </script>
+  {% endif %}
+
+  {% if page.schema == "app" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "{{ page.app_name }}",
+    "operatingSystem": "Android",
+    "applicationCategory": "HealthApplication",
+    "description": "{{ page.summary }}",
+    "url": "{{ page.url | absolute_url }}",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "GBP"
+    }
+  }
+  </script>
+  {% endif %}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% seo %}
+</head>
 <body>
 
-    <header class="site-header">
-        <div class="wrapper">
-            <a class="site-title" href="{{ '/' | relative_url }}">
-                {{ site.title }}
-            </a>
-        </div>
-    </header>
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav-home">Underthink</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="/shower-thoughts/">Shower Thoughts</a>
+      <a href="/walking-and-thinking/">Walking</a>
+      <a href="/default-mode-network/">The DMN</a>
+      <a href="/diffuse-thinking/">Diffuse Thinking</a>
+      <a href="/problem-solving/">Problem Solving</a>
+      <a href="/fidgeting-and-focus/">Fidgeting &amp; Focus</a>
+      <a href="/creative-cycles/">Creative Cycles</a>
+      <a href="/mindfulness-vs-underthinking/">Mindfulness vs Underthinking</a>
+      <a href="/research/">Research</a>
+      <a href="/walk/">Walk</a>
+      <a href="/clear/">Clear</a>
+      <a href="/about/">About</a>
+    </div>
+  </nav>
 
-    <main class="page-content">
-        <div class="wrapper">
-            {{ content }}
-        </div>
-    </main>
+  <main>
+    <article>
+      {% if page.title and page.layout != "home" %}
+      <header class="page-header">
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+      </header>
+      {% endif %}
 
-    <footer class="site-footer">
-        <div class="wrapper">
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+      <div class="page-content">
+        {{ content }}
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-nav">
+        <div class="footer-col">
+          <h3>The Science</h3>
+          <a href="/shower-thoughts/">Shower Thoughts</a>
+          <a href="/walking-and-thinking/">Walking &amp; Thinking</a>
+          <a href="/default-mode-network/">Default Mode Network</a>
+          <a href="/diffuse-thinking/">Diffuse Thinking</a>
+          <a href="/problem-solving/">Problem Solving</a>
+          <a href="/fidgeting-and-focus/">Fidgeting &amp; Focus</a>
+          <a href="/creative-cycles/">Creative Cycles</a>
+          <a href="/mindfulness-vs-underthinking/">Mindfulness vs Underthinking</a>
         </div>
-    </footer>
+        <div class="footer-col">
+          <h3>Tools</h3>
+          <a href="/walk/">Walk App</a>
+          <a href="/clear/">Clear App</a>
+          <a href="/research/">Research</a>
+          <a href="/about/">About Underthink</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Underthink doesn't track you, profile you, or sell your attention. No cookies. No analytics.</p>
+        <p>&copy; {{ site.time | date: '%Y' }} Underthink</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      const nav = document.querySelector('.nav-links');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>
