@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "The engine of creative work: switching between focus and drift"
 summary: "Creative work depends on deliberately cycling between focused attention and diffuse mind-wandering. Research by Roger Beaty shows highly creative people can fluidly switch between the default mode network and executive control network."
 subtitle: "Creativity isn't a mode. It's the oscillation between two modes."

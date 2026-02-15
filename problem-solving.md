@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Why stepping away from a problem helps you solve it"
 summary: "Incubation — stepping away from a problem to let the unconscious mind work — is a well-documented cognitive phenomenon. From Poincaré's mathematical breakthroughs to rubber duck debugging, the science explains why your best solutions arrive when you stop looking for them."
 subtitle: "Poincaré's bus. Edison's nap. Your shower."
