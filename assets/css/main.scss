@@ -1,0 +1,101 @@
+---
+# Front matter for Jekyll processing
+---
+
+// Brand Colors
+$bg-dark: #121212;
+$text-cream: #e8e6e1;
+$accent-orange: #d35400; // Matches your "Walk" app icon
+$muted-grey: #888888;
+
+// Hero Styling
+.hero {
+  padding: 8rem 0 4rem 0;
+  
+  .hero-logo {
+    width: 60px;
+    height: 60px;
+    border: 5px solid $accent-orange;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    position: relative;
+    
+    // Creates the "break" in the circle seen in your PNGs
+    &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      width: 25px;
+      height: 25px;
+      background: $bg-dark;
+    }
+  }
+}
+
+// Typography spacing
+.mission-statement {
+  margin-bottom: 6rem;
+  .editorial-copy {
+    max-width: 650px;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #ccc;
+  }
+}
+
+// Buttons
+.cta-group {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.5rem;
+  
+  .btn-primary {
+    background: $accent-orange;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .btn-secondary {
+    border: 1px solid $muted-grey;
+    color: $text-cream;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2px;
+  }
+}
+
+// Writing Feed
+.section-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: $muted-grey;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  
+  .post-item {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    
+    .post-date {
+      font-size: 0.8rem;
+      color: $muted-grey;
+      margin-bottom: 0.5rem;
+    }
+    
+    .post-link {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: $text-cream;
+      text-decoration: none;
+      &:hover { color: $accent-orange; }
+    }
+  }
+}

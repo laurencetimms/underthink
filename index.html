@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Underthink - Home"
+---
+
+<section class="hero">
+  <div class="hero-logo"></div> 
+  
+  <h1>Your best thinking happens when you're not trying.</h1>
+  <p class="sub-tagline">The science of showers, walks, and letting your mind work.</p>
+</section>
+
+<section class="mission-statement">
+  <div class="editorial-copy">
+    <p>
+      Most productivity tools demand more of your attention. 
+      <strong>Underthink</strong> is built on a different premise: that clarity 
+      emerges when you step away.
+    </p>
+    
+    <div class="cta-group">
+      <a href="{{ '/apps' | relative_url }}" class="btn-primary">Explore the Apps</a>
+      <a href="{{ '/about' | relative_url }}" class="btn-secondary">The Science</a>
+    </div>
+  </div>
+</section>
+
+<section class="writing-feed">
+  <h2 class="section-label">Latest Writing</h2>
+  <hr class="divider">
+  
+  <ul class="post-list">
+    {% for post in site.posts limit:3 %}
+      <li class="post-item">
+        <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        <a href="{{ post.url | relative_url }}" class="post-link">
+          {{ post.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  
+  <a href="{{ '/blog' | relative_url }}" class="view-all">View all articles &rarr;</a>
+</section>
